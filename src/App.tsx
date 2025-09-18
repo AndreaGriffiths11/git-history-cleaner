@@ -53,7 +53,7 @@ git checkout --orphan ${customBranchName}
 git add -A
 
 # Commit everything with a new initial message
-git commit -m "Initial commit - history cleared"
+git commit -m "Initial commit"
 
 # Delete the main branch
 git branch -D main
