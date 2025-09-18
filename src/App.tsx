@@ -45,15 +45,14 @@ echo "🚀 Starting git history cleanup for ${repoName}..."
 
 ${createBackup ? `# Create backup first (recommended)
 echo "📦 Creating backup..."
-cp -r ${repoName} ${repoName}-backup
+cp -r "${repoName}" "${repoName}-backup"
 echo "✅ Backup created as ${repoName}-backup"
-` : ''}
-# Navigate to repository
-cd ${repoName}
+` : ''}# Navigate to repository
+cd "${repoName}"
 
 # Create a completely new branch with no history
 echo "🌱 Creating new branch without history..."
-git checkout --orphan ${customBranchName}
+git checkout --orphan "${customBranchName}"
 
 # Add all your files
 echo "📁 Adding all files..."
@@ -76,8 +75,7 @@ echo "⬆️  Force pushing to remote..."
 git push -f origin main
 
 echo "✨ Git history cleanup completed successfully!"
-echo "⚠️  Note: This operation cannot be undone. Your backup is in ${repoName}-backup"
-`
+echo "⚠️  Note: This operation cannot be undone. Your backup is in ${repoName}-backup"`
 
     setGeneratedScript(script)
     setIsGenerated(true)
@@ -108,11 +106,15 @@ echo "⚠️  Note: This operation cannot be undone. Your backup is in ${repoNam
 
   const commandExplanations = [
     {
-      command: 'cp -r repo repo-backup',
+      command: 'cp -r "repo" "repo-backup"',
       explanation: 'Creates a complete backup copy of your repository folder before making any changes'
     },
     {
-      command: 'git checkout --orphan new_branch',
+      command: 'cd "repo"',
+      explanation: 'Navigates into the repository directory to perform git operations'
+    },
+    {
+      command: 'git checkout --orphan "new_branch"',
       explanation: 'Creates a new branch with no commit history - like starting fresh'
     },
     {
