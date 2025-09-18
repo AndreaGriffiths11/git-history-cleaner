@@ -47,6 +47,7 @@ ${createBackup ? `# Create backup first (recommended)
 echo "📦 Creating backup..."
 cp -r "${repoName}" "${repoName}-backup"
 echo "✅ Backup created as ${repoName}-backup"
+
 ` : ''}# Navigate to repository
 cd "${repoName}"
 
