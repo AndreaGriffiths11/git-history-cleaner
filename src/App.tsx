@@ -76,7 +76,7 @@ echo "⬆️  Force pushing to remote..."
 git push -f origin main
 
 echo "✨ Git history cleanup completed successfully!"
-echo "⚠️  Note: This operation cannot be undone. Your backup is in ${repoName}-backup"`
+${createBackup ? `echo "⚠️  Note: This operation cannot be undone. Your backup is in ${repoName}-backup"` : 'echo "⚠️  Note: This operation cannot be undone. Make sure you have backups!"'}`
 
     setGeneratedScript(script)
     setIsGenerated(true)
