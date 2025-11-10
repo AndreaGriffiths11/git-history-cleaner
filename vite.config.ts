@@ -16,4 +16,5 @@ export default defineConfig({
       '@': resolve(projectRoot, 'src')
     }
   },
+  base: process.env.VITE_BASE || '/',
 });
