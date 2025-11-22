@@ -23,11 +23,23 @@ function App() {
     return name.replace(/[^a-zA-Z0-9-_]/g, '').slice(0, 100)
   }
 
+  const sanitizeBranchName = (name: string) => {
+    return name.replace(/[^a-zA-Z0-9-_]/g, '').slice(0, 100)
+  }
+
   const handleRepoNameChange = (value: string) => {
     const sanitized = sanitizeRepoName(value)
     setRepoName(sanitized)
     if (sanitized !== value) {
       toast.warning('Repository name was sanitized (only letters, numbers, hyphens, and underscores allowed)')
+    }
+  }
+
+  const handleBranchNameChange = (value: string) => {
+    const sanitized = sanitizeBranchName(value)
+    setCustomBranchName(sanitized)
+    if (sanitized !== value) {
+      toast.warning('Branch name was sanitized (only letters, numbers, hyphens, and underscores allowed)')
     }
   }
 
@@ -191,7 +203,7 @@ git push -f origin main`
                   <Input
                     id="branch-name"
                     value={customBranchName}
-                    onChange={(e) => setCustomBranchName(e.target.value)}
+                    onChange={(e) => handleBranchNameChange(e.target.value)}
                     className="font-mono"
                   />
                   <p className="text-sm text-muted-foreground">
