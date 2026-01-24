@@ -1,5 +1,8 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 @import "tw-animate-css";
+@import "./styles/theme.css";
+
+@config "../tailwind.config.js";
 
 @layer base {
   * {
