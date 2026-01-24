@@ -1,3 +1,4 @@
+@import '@radix-ui/colors/sage.css' layer(base);
 @import '@radix-ui/colors/sage-dark.css' layer(base);
 @import '@radix-ui/colors/olive.css' layer(base);
 @import '@radix-ui/colors/olive-dark.css' layer(base);
