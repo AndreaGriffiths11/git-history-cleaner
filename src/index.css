@@ -8,11 +8,11 @@
   * {
     @apply border-border;
   }
-  
+
   body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
-  
+
   .font-mono {
     font-family: 'JetBrains Mono', monospace;
   }
@@ -22,12 +22,12 @@
   /* Base colors */
   --background: oklch(1 0 0);
   --foreground: oklch(0.25 0.02 240);
-  
+
   --card: oklch(0.98 0.01 240);
   --card-foreground: oklch(0.25 0.02 240);
   --popover: oklch(0.98 0.01 240);
   --popover-foreground: oklch(0.25 0.02 240);
-  
+
   /* Action colors */
   --primary: oklch(0.45 0.15 240);
   --primary-foreground: oklch(1 0 0);
@@ -37,14 +37,14 @@
   --accent-foreground: oklch(1 0 0);
   --destructive: oklch(0.65 0.20 20);
   --destructive-foreground: oklch(1 0 0);
-  
+
   /* Supporting colors */
   --muted: oklch(0.92 0.01 240);
   --muted-foreground: oklch(0.55 0.02 240);
   --border: oklch(0.88 0.01 240);
   --input: oklch(0.88 0.01 240);
   --ring: oklch(0.45 0.15 240);
-  
+
   /* Border radius */
   --radius: 0.5rem;
 }
