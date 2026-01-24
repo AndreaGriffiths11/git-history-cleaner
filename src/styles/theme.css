@@ -126,6 +126,9 @@
    *
    * https://tailwindcss.com/docs/customizing-spacing#default-spacing-scale
    */
+    /* Tailwind CSS v4 base spacing unit */
+    --spacing: 0.25rem;
+
     --size-scale: 1;
     --size-0: 0px;
     --size-px: 1px;
