@@ -326,7 +326,7 @@ git push -f origin main`
         <p className="mt-1">
           Open source under the{' '}
           <a 
-            href="https://github.com/AndreaGriffiths11/git-history-cleaner/blob/main/LICENSE" 
+            href="./LICENSE" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-foreground hover:underline"
