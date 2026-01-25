@@ -327,8 +327,6 @@ git push -f origin main`
           Open source under the{' '}
           <a 
             href="./LICENSE" 
-            target="_blank" 
-            rel="noopener noreferrer"
             className="text-foreground hover:underline"
           >
             MIT License
