@@ -310,6 +310,29 @@ git push -f origin main`
           </Collapsible>
         </Card>
       </div>
+
+      <footer className="max-w-4xl mx-auto mt-8 py-6 border-t border-border text-center text-sm text-muted-foreground">
+        <p>
+          Made with ❤️ by{' '}
+          <a 
+            href="https://x.com/acolombiadev" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-foreground hover:underline"
+          >
+            @acolombiadev
+          </a>
+        </p>
+        <p className="mt-1">
+          Open source under the{' '}
+          <a 
+            href="/LICENSE" 
+            className="text-foreground hover:underline"
+          >
+            MIT License
+          </a>
+        </p>
+      </footer>
     </div>
   )
 }
