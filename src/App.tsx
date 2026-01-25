@@ -315,7 +315,7 @@ git push -f origin main`
         <p>
           Made with ❤️ by{' '}
           <a 
-            href="https://x.com/acolombiadedev" 
+            href="https://x.com/acolombiadev" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-foreground hover:underline"
