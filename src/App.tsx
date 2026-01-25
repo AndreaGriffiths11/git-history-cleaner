@@ -326,7 +326,7 @@ git push -f origin main`
         <p className="mt-1">
           Open source under the{' '}
           <a 
-            href="./LICENSE" 
+            href="/LICENSE" 
             className="text-foreground hover:underline"
           >
             MIT License
